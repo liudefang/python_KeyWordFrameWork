@@ -5,15 +5,16 @@
 
 import os
 
-ieDriverFilePath = "D:\Python34\IEDriverServer.exe"
-chromeDriverFilePath = "D:\Python34\chromedriver.exe"
+ieDriverFilePath = "D:\Python36\IEDriverServer.exe"
+chromeDriverFilePath = "D:\Python36\chromedriver.exe"
+firefoxDriverFilePath = "D:\Python36\chromedriver.exe"
 
 
 #获取当前文件夹所在目录的父目录的绝对路径
 parentDirPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 #异常截图存放目录绝对路径
-screenPicturesDir = parentDirPath + "\\exceptionpictures"
+screenPicturesDir = parentDirPath + "\\exceptionpictures\\"
 
 #测试数据文件存放绝对路径
 dataFilePath = parentDirPath + "\\testData\\126邮箱联系人.xlsx"

@@ -4,12 +4,12 @@
 # @File    : TestSendMailWithAttachment.py
 import time
 
-import sys
+
 import traceback
 from imp import reload
+from util.Log import *
 
-import logging
-
+import sys
 from legacy import xrange
 from openpyxl.compat import long
 
@@ -19,7 +19,7 @@ from action.PageAction import *
 
 #设置此次测试的环境编码为utf-8
 reload(sys)
-sys.setdefaultencoding("utf-8")
+
 
 #创建解析excel对象
 excelObj = ParseExcel()
@@ -33,15 +33,15 @@ def writeTestResult(sheetObj,rowNo,colsNo,testResult,errorInfo = None,picPath = 
 
     #因为“测试用例”工作表和“用例步骤sheet表”中都有测试执行时间和
     #测试结果列，定义此字典对象是为了区分具体应该写哪个工作表
-    colorDict = {
+    colsDict = {
         "testCase":[testCase_runTime,testCase_testResult],
         "caseStep":[testStep_runTime,testStep_testResult]
     }
     try:
         #在测试步骤sheet中，写入测试时间
-        excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colorDict[colsNo[0]])
+        excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
         #在测试步骤sheet，写入测试结果
-        excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colorDict[colsNo][1],style = colorDict[testResult])
+        excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
 
         if errorInfo and picPath:
             #在测试步骤sheet中，写入异常信息
@@ -52,7 +52,7 @@ def writeTestResult(sheetObj,rowNo,colsNo,testResult,errorInfo = None,picPath = 
             #在测试步骤sheet中，清空异常信息单元格
             excelObj.writeCell(sheetObj,content="",rowNo=rowNo,colsNo=testStep_errorInfo)
             #在测试步骤sheet中，清空异常信息单元格
-            excelObj.writeCell(sheetObj,rowNo=rowNo,colsNo=testStep_errorPic)
+            excelObj.writeCell(sheetObj,content="",rowNo=rowNo,colsNo=testStep_errorPic)
     except Exception as e:
         logging.info("写excel出错,%s" %traceback.format_exc())
 
@@ -69,7 +69,7 @@ def TestSendMailWithAttachment():
         #记录需要执行的测试用例个数
         requiredCase = 0
 
-        logging.info("测试为126邮箱添加联系人执行开始")
+
         for idx, i in enumerate(isExecuteColumn[1:]):
             #因为用例sheet中第一行为标题行，无须执行
             #print i.value
@@ -83,7 +83,7 @@ def TestSendMailWithAttachment():
                 #print(testCase_testStepSheetName)
 
                 #根据用例步骤名获取步骤sheet对象
-                stepSheet = excelObj.getSheetByname(caseStepSheetName)
+                stepSheet = excelObj.getSheetByName(caseStepSheetName)
                 #获取步骤sheet中步骤数
                 stepNum = excelObj.getRowsNumber(stepSheet)
                 #print(stepNum)
@@ -145,7 +145,7 @@ def TestSendMailWithAttachment():
                         errorInfo = traceback.format_exc()
                         #在测试步骤sheet中写入失败信息
                         writeTestResult(
-                            stepSheet,step,"caseStep","faild",errorInfo,capturePic
+                            stepSheet,step,"caseStep","Faild",errorInfo,capturePic
                         )
                         logging.info("步骤%s执行失败！" %stepRow[testStep_testStepDescribe-1].value)
                     else:
@@ -160,7 +160,7 @@ def TestSendMailWithAttachment():
                 writeTestResult(caseSheet,idx + 2,"testCase","Pass")
                 successfulCase += 1
             else:
-                writeTestResult(caseSheet,idx+2,"testCase","faild")
+                writeTestResult(caseSheet,idx+2,"testCase","Faild")
         logging.info("共%d条用例,%d条需要被执行，本次执行通过%d条." %(len(isExecuteColumn)-1,requiredCase,successfulCase))
     except Exception as e:
         #打印详细的异常堆栈信息

@@ -12,14 +12,15 @@ from selenium.webdriver.support.wait import WebDriverWait
 class WaitUtil(object):
 
     def __init__(self,driver):
-         self.locationTypeDic = {
-              "xpath":By.XPATH,
-               "id":By.ID,
-               "name":By.NAME,
-               "class_name":By.CLASS_NAME,
-               "tag_name":By.TAG_NAME,
-               "link_text":By.LINK_TEXT,
-               "partial_link_text":By.PARTIAL_LINK_TEXT
+         self.locationTypeDictt = {
+             "xpath":By.XPATH,
+             "id":By.ID,
+             "name":By.NAME,
+             "css_selector":By.CSS_SELECTOR,
+             "class_name":By.CLASS_NAME,
+             "tag_name":By.TAG_NAME,
+             "link_text":By.LINK_TEXT,
+             "partial_link_text":By.PARTIAL_LINK_TEXT
          }
          self.driver = driver
          self.wait = WebDriverWait(self.driver,30)
@@ -28,21 +29,21 @@ class WaitUtil(object):
         '''显式等待页面元素出现在DOM中，但并不一定可见,
         存在则返回改页面元素对象'''
         try:
-            if self.locationTypeDic.has_key(locatorMethod.lower()):
+            if self.locationTypeDict.has_key(locatorMethod.lower()):
                 self.wait.until(
                     EC.presence_of_all_elements_located((
-                        self.locationTypeDic[locatorMethod.lower()],locatorExpression)))
+                        self.locationTypeDictt[locatorMethod.lower()],locatorExpression)))
             else:
                 raise TypeError("未找到定位方式，请确认定位方法是否写正确")
         except Exception as e:
             raise e
 
-    def frame_available_and_swith_to_it(self,locationTpye,locatorExpression,*arg):
+    def frameToBeAvailableAndSwitchToIt(self,locationTpye,locatorExpression,*arg):
         '''检查fram是否存在，存在则切换金frame控件中'''
         try:
             self.wait.until(
                 EC.frame_to_be_available_and_switch_to_it((
-                    self.locationTypeDic[locationTpye.lower()],
+                    self.locationTypeDictt[locationTpye.lower()],
                     locatorExpression)))
         except Exception as e:
             #抛出异常信息给上层调用者
@@ -52,7 +53,7 @@ class WaitUtil(object):
         try:
             element = self.wait.until(
                 EC.visibility_of_element_located((
-                    self.locationTypeDic[locationType.lower()],
+                    self.locationTypeDict[locationType.lower()],
                     locatorExpression)))
         except Exception as e:
             raise e

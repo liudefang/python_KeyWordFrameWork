@@ -1,0 +1,1054 @@
+2017-12-14 22:24:05 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 22:24:05 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 22:24:07 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2294/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 22:24:10 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:10 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2294/session/5f12506b8a15c06a91436c37f9482481/screenshot {"sessionId": "5f12506b8a15c06a91436c37f9482481"}
+2017-12-14 22:24:10 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:10 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 45, in open_browser
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 43, in open_browser
+    waitUtil = waitUtil(driver)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:24:10 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 22:24:10 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2294/session/5f12506b8a15c06a91436c37f9482481/url {"url": "http://mail.126.com", "sessionId": "5f12506b8a15c06a91436c37f9482481"}
+2017-12-14 22:24:13 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:13 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 22:24:13 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2294/session/5f12506b8a15c06a91436c37f9482481/window/current/maximize {"windowHandle": "current", "sessionId": "5f12506b8a15c06a91436c37f9482481"}
+2017-12-14 22:24:14 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:14 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 22:24:20 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 22:24:20 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2294/session/5f12506b8a15c06a91436c37f9482481/source {"sessionId": "5f12506b8a15c06a91436c37f9482481"}
+2017-12-14 22:24:20 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:20 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2294/session/5f12506b8a15c06a91436c37f9482481/screenshot {"sessionId": "5f12506b8a15c06a91436c37f9482481"}
+2017-12-14 22:24:20 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:20 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 96, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: 126网易邮箱--你的专业电子邮局 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 98, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: 126网易邮箱--你的专业电子邮局 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:24:20 TestSendMailWithAttachment.py[line:150] INFO步骤断言执行失败！
+2017-12-14 22:24:20 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2294/session/5f12506b8a15c06a91436c37f9482481/screenshot {"sessionId": "5f12506b8a15c06a91436c37f9482481"}
+2017-12-14 22:24:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:21 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 204, in waitFrameToBeAvailableAndSwitchToIt
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 202, in waitFrameToBeAvailableAndSwitchToIt
+    waitUtil.FrameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression,*arg)
+AttributeError: 'NoneType' object has no attribute 'FrameToBeAvailableAndSwitchToIt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:24:21 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:24:21 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2294/session/5f12506b8a15c06a91436c37f9482481/screenshot {"sessionId": "5f12506b8a15c06a91436c37f9482481"}
+2017-12-14 22:24:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:21 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:24:21 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:24:21 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2294/session/5f12506b8a15c06a91436c37f9482481/screenshot {"sessionId": "5f12506b8a15c06a91436c37f9482481"}
+2017-12-14 22:24:22 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:24:22 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:24:22 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:24:22 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:24:22 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:24:22 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 22:34:17 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 22:34:17 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 22:34:19 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2489/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 22:34:22 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:22 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2489/session/397958cd5d68aa2b105a7c8e2b2f2adc/screenshot {"sessionId": "397958cd5d68aa2b105a7c8e2b2f2adc"}
+2017-12-14 22:34:22 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:22 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 45, in open_browser
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 43, in open_browser
+    waitUtil = waitUtil(driver)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:34:22 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 22:34:22 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2489/session/397958cd5d68aa2b105a7c8e2b2f2adc/url {"url": "http://mail.126.com", "sessionId": "397958cd5d68aa2b105a7c8e2b2f2adc"}
+2017-12-14 22:34:25 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:26 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 22:34:26 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2489/session/397958cd5d68aa2b105a7c8e2b2f2adc/window/current/maximize {"windowHandle": "current", "sessionId": "397958cd5d68aa2b105a7c8e2b2f2adc"}
+2017-12-14 22:34:27 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:27 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 22:34:32 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 22:34:32 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2489/session/397958cd5d68aa2b105a7c8e2b2f2adc/source {"sessionId": "397958cd5d68aa2b105a7c8e2b2f2adc"}
+2017-12-14 22:34:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:32 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2489/session/397958cd5d68aa2b105a7c8e2b2f2adc/screenshot {"sessionId": "397958cd5d68aa2b105a7c8e2b2f2adc"}
+2017-12-14 22:34:33 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:33 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 96, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: 126网易邮箱--你的专业电子邮局 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 98, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: 126网易邮箱--你的专业电子邮局 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:34:33 TestSendMailWithAttachment.py[line:150] INFO步骤断言执行失败！
+2017-12-14 22:34:33 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2489/session/397958cd5d68aa2b105a7c8e2b2f2adc/screenshot {"sessionId": "397958cd5d68aa2b105a7c8e2b2f2adc"}
+2017-12-14 22:34:33 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:33 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 204, in waitFrameToBeAvailableAndSwitchToIt
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 202, in waitFrameToBeAvailableAndSwitchToIt
+    waitUtil.FrameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression,*arg)
+AttributeError: 'NoneType' object has no attribute 'FrameToBeAvailableAndSwitchToIt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:34:33 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:34:33 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2489/session/397958cd5d68aa2b105a7c8e2b2f2adc/screenshot {"sessionId": "397958cd5d68aa2b105a7c8e2b2f2adc"}
+2017-12-14 22:34:34 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:34 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:34:34 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:34:34 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2489/session/397958cd5d68aa2b105a7c8e2b2f2adc/screenshot {"sessionId": "397958cd5d68aa2b105a7c8e2b2f2adc"}
+2017-12-14 22:34:34 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:34:34 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:34:34 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:34:34 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:34:34 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:34:34 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 22:36:12 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 22:36:12 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 22:36:14 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2573/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 22:36:17 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:17 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2573/session/8b4933e3abe692560d55058a43af5738/screenshot {"sessionId": "8b4933e3abe692560d55058a43af5738"}
+2017-12-14 22:36:17 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:17 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 45, in open_browser
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 43, in open_browser
+    waitUtil = waitUtil(driver)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:36:17 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 22:36:17 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2573/session/8b4933e3abe692560d55058a43af5738/url {"url": "http://mail.126.com", "sessionId": "8b4933e3abe692560d55058a43af5738"}
+2017-12-14 22:36:19 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:19 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 22:36:19 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2573/session/8b4933e3abe692560d55058a43af5738/window/current/maximize {"windowHandle": "current", "sessionId": "8b4933e3abe692560d55058a43af5738"}
+2017-12-14 22:36:21 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:21 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 22:36:26 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 22:36:26 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2573/session/8b4933e3abe692560d55058a43af5738/source {"sessionId": "8b4933e3abe692560d55058a43af5738"}
+2017-12-14 22:36:26 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:26 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2573/session/8b4933e3abe692560d55058a43af5738/screenshot {"sessionId": "8b4933e3abe692560d55058a43af5738"}
+2017-12-14 22:36:27 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:27 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 96, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: 126网易邮箱--你的专业电子邮局 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 98, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: 126网易邮箱--你的专业电子邮局 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:36:27 TestSendMailWithAttachment.py[line:150] INFO步骤断言执行失败！
+2017-12-14 22:36:27 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2573/session/8b4933e3abe692560d55058a43af5738/screenshot {"sessionId": "8b4933e3abe692560d55058a43af5738"}
+2017-12-14 22:36:27 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:27 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 204, in waitFrameToBeAvailableAndSwitchToIt
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 202, in waitFrameToBeAvailableAndSwitchToIt
+    waitUtil.FrameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression,*arg)
+AttributeError: 'NoneType' object has no attribute 'FrameToBeAvailableAndSwitchToIt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:36:27 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:36:27 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2573/session/8b4933e3abe692560d55058a43af5738/screenshot {"sessionId": "8b4933e3abe692560d55058a43af5738"}
+2017-12-14 22:36:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:28 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:36:28 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:36:28 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2573/session/8b4933e3abe692560d55058a43af5738/screenshot {"sessionId": "8b4933e3abe692560d55058a43af5738"}
+2017-12-14 22:36:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:36:28 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:36:28 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:36:28 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:36:28 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:36:28 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 22:45:23 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 22:45:23 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 22:45:25 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2726/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 22:45:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:28 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2726/session/445d37b1f6769ad0b0f75cee8bbda928/screenshot {"sessionId": "445d37b1f6769ad0b0f75cee8bbda928"}
+2017-12-14 22:45:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:28 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 45, in open_browser
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 43, in open_browser
+    waitUtil = waitUtil(driver)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:45:28 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 22:45:28 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2726/session/445d37b1f6769ad0b0f75cee8bbda928/url {"url": "http://mail.126.com", "sessionId": "445d37b1f6769ad0b0f75cee8bbda928"}
+2017-12-14 22:45:31 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:31 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 22:45:31 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2726/session/445d37b1f6769ad0b0f75cee8bbda928/window/current/maximize {"windowHandle": "current", "sessionId": "445d37b1f6769ad0b0f75cee8bbda928"}
+2017-12-14 22:45:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:32 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 22:45:38 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 22:45:38 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2726/session/445d37b1f6769ad0b0f75cee8bbda928/source {"sessionId": "445d37b1f6769ad0b0f75cee8bbda928"}
+2017-12-14 22:45:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:38 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2726/session/445d37b1f6769ad0b0f75cee8bbda928/screenshot {"sessionId": "445d37b1f6769ad0b0f75cee8bbda928"}
+2017-12-14 22:45:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:38 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 96, in assert_string_in_pagesource
+    assert assertString in driver.page_source,"%s not found in page source!" %assertString
+AssertionError: 126网易邮箱--你的专业电子邮局 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 98, in assert_string_in_pagesource
+    raise AssertionError(e)
+AssertionError: 126网易邮箱--你的专业电子邮局 not found in page source!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:45:38 TestSendMailWithAttachment.py[line:150] INFO步骤断言执行失败！
+2017-12-14 22:45:38 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2726/session/445d37b1f6769ad0b0f75cee8bbda928/screenshot {"sessionId": "445d37b1f6769ad0b0f75cee8bbda928"}
+2017-12-14 22:45:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:39 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 204, in waitFrameToBeAvailableAndSwitchToIt
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 202, in waitFrameToBeAvailableAndSwitchToIt
+    waitUtil.FrameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression,*arg)
+AttributeError: 'NoneType' object has no attribute 'FrameToBeAvailableAndSwitchToIt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:45:39 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:45:39 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2726/session/445d37b1f6769ad0b0f75cee8bbda928/screenshot {"sessionId": "445d37b1f6769ad0b0f75cee8bbda928"}
+2017-12-14 22:45:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:39 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:45:39 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:45:39 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2726/session/445d37b1f6769ad0b0f75cee8bbda928/screenshot {"sessionId": "445d37b1f6769ad0b0f75cee8bbda928"}
+2017-12-14 22:45:40 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:45:40 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:45:40 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:45:40 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:45:40 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:45:40 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 22:52:36 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 22:52:36 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 22:52:38 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2895/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 22:52:41 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:52:41 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2895/session/9e4a6e70f882b7e8d83b2d71428635ff/screenshot {"sessionId": "9e4a6e70f882b7e8d83b2d71428635ff"}
+2017-12-14 22:52:41 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:52:41 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 45, in open_browser
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 43, in open_browser
+    waitUtil = waitUtil(driver)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:52:41 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 22:52:41 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2895/session/9e4a6e70f882b7e8d83b2d71428635ff/url {"url": "http://mail.126.com", "sessionId": "9e4a6e70f882b7e8d83b2d71428635ff"}
+2017-12-14 22:52:44 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:52:44 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 22:52:44 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2895/session/9e4a6e70f882b7e8d83b2d71428635ff/window/current/maximize {"windowHandle": "current", "sessionId": "9e4a6e70f882b7e8d83b2d71428635ff"}
+2017-12-14 22:52:45 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:52:45 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 22:52:50 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 22:52:50 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2895/session/9e4a6e70f882b7e8d83b2d71428635ff/source {"sessionId": "9e4a6e70f882b7e8d83b2d71428635ff"}
+2017-12-14 22:52:51 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:52:51 TestSendMailWithAttachment.py[line:156] INFO步骤断言执行通过
+2017-12-14 22:52:51 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2895/session/9e4a6e70f882b7e8d83b2d71428635ff/screenshot {"sessionId": "9e4a6e70f882b7e8d83b2d71428635ff"}
+2017-12-14 22:52:51 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:52:51 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 204, in waitFrameToBeAvailableAndSwitchToIt
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 202, in waitFrameToBeAvailableAndSwitchToIt
+    waitUtil.FrameToBeAvailableAndSwitchToIt(locationTpye,locatorExpression,*arg)
+AttributeError: 'NoneType' object has no attribute 'FrameToBeAvailableAndSwitchToIt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:52:51 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:52:51 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2895/session/9e4a6e70f882b7e8d83b2d71428635ff/screenshot {"sessionId": "9e4a6e70f882b7e8d83b2d71428635ff"}
+2017-12-14 22:52:52 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:52:52 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:52:52 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:52:52 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2895/session/9e4a6e70f882b7e8d83b2d71428635ff/screenshot {"sessionId": "9e4a6e70f882b7e8d83b2d71428635ff"}
+2017-12-14 22:52:52 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:52:52 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:52:52 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:52:52 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:52:52 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:52:52 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 22:54:50 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 22:54:50 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 22:54:52 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2954/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 22:54:55 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:54:55 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2954/session/3c632a2bef18f16cd74aa0cc55a60839/screenshot {"sessionId": "3c632a2bef18f16cd74aa0cc55a60839"}
+2017-12-14 22:54:55 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:54:56 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 22:54:56 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2954/session/3c632a2bef18f16cd74aa0cc55a60839/url {"url": "http://mail.126.com", "sessionId": "3c632a2bef18f16cd74aa0cc55a60839"}
+2017-12-14 22:55:01 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:55:01 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 22:55:01 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:2954/session/3c632a2bef18f16cd74aa0cc55a60839/window/current/maximize {"windowHandle": "current", "sessionId": "3c632a2bef18f16cd74aa0cc55a60839"}
+2017-12-14 22:55:02 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:55:03 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 22:55:08 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 22:55:08 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2954/session/3c632a2bef18f16cd74aa0cc55a60839/source {"sessionId": "3c632a2bef18f16cd74aa0cc55a60839"}
+2017-12-14 22:55:08 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:55:08 TestSendMailWithAttachment.py[line:156] INFO步骤断言执行通过
+2017-12-14 22:55:08 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2954/session/3c632a2bef18f16cd74aa0cc55a60839/screenshot {"sessionId": "3c632a2bef18f16cd74aa0cc55a60839"}
+2017-12-14 22:55:09 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:55:09 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:55:09 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2954/session/3c632a2bef18f16cd74aa0cc55a60839/screenshot {"sessionId": "3c632a2bef18f16cd74aa0cc55a60839"}
+2017-12-14 22:55:09 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:55:09 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:55:10 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:2954/session/3c632a2bef18f16cd74aa0cc55a60839/screenshot {"sessionId": "3c632a2bef18f16cd74aa0cc55a60839"}
+2017-12-14 22:55:10 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:55:10 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:55:10 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:55:10 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 44, in writeTestResult
+    excelObj.writeCell(sheetObj,content=testResult,rowNo=rowNo,colsNo=colsDict[colsNo][1],style = colorDict[testResult])
+KeyError: 'faild'
+
+2017-12-14 22:55:10 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 22:57:21 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 22:57:21 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 22:57:23 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3035/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 22:57:25 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:57:25 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3035/session/b62f264f4440737292e49544b6a47e11/screenshot {"sessionId": "b62f264f4440737292e49544b6a47e11"}
+2017-12-14 22:57:26 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:57:26 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 22:57:26 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3035/session/b62f264f4440737292e49544b6a47e11/url {"url": "http://mail.126.com", "sessionId": "b62f264f4440737292e49544b6a47e11"}
+2017-12-14 22:57:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:57:28 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 22:57:28 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3035/session/b62f264f4440737292e49544b6a47e11/window/current/maximize {"windowHandle": "current", "sessionId": "b62f264f4440737292e49544b6a47e11"}
+2017-12-14 22:57:29 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:57:29 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 22:57:34 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 22:57:34 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3035/session/b62f264f4440737292e49544b6a47e11/source {"sessionId": "b62f264f4440737292e49544b6a47e11"}
+2017-12-14 22:57:34 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:57:35 TestSendMailWithAttachment.py[line:156] INFO步骤断言执行通过
+2017-12-14 22:57:35 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3035/session/b62f264f4440737292e49544b6a47e11/screenshot {"sessionId": "b62f264f4440737292e49544b6a47e11"}
+2017-12-14 22:57:35 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:57:35 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:57:35 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3035/session/b62f264f4440737292e49544b6a47e11/screenshot {"sessionId": "b62f264f4440737292e49544b6a47e11"}
+2017-12-14 22:57:36 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:57:36 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:57:36 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3035/session/b62f264f4440737292e49544b6a47e11/screenshot {"sessionId": "b62f264f4440737292e49544b6a47e11"}
+2017-12-14 22:57:36 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 22:57:36 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 22:57:37 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 23:01:38 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:01:38 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 23:01:40 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3160/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 23:01:44 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:01:44 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3160/session/552e1719ade2f4d8ce10068fdbf68623/screenshot {"sessionId": "552e1719ade2f4d8ce10068fdbf68623"}
+2017-12-14 23:01:45 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:01:45 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 23:01:45 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3160/session/552e1719ade2f4d8ce10068fdbf68623/url {"url": "http://mail.126.com", "sessionId": "552e1719ade2f4d8ce10068fdbf68623"}
+2017-12-14 23:01:47 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:01:47 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 23:01:47 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3160/session/552e1719ade2f4d8ce10068fdbf68623/window/current/maximize {"windowHandle": "current", "sessionId": "552e1719ade2f4d8ce10068fdbf68623"}
+2017-12-14 23:01:48 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:01:48 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 23:01:53 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 23:01:53 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3160/session/552e1719ade2f4d8ce10068fdbf68623/source {"sessionId": "552e1719ade2f4d8ce10068fdbf68623"}
+2017-12-14 23:01:53 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:01:54 TestSendMailWithAttachment.py[line:156] INFO步骤断言执行通过
+2017-12-14 23:01:54 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3160/session/552e1719ade2f4d8ce10068fdbf68623/screenshot {"sessionId": "552e1719ade2f4d8ce10068fdbf68623"}
+2017-12-14 23:01:54 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:01:54 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:01:54 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3160/session/552e1719ade2f4d8ce10068fdbf68623/screenshot {"sessionId": "552e1719ade2f4d8ce10068fdbf68623"}
+2017-12-14 23:01:55 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:01:55 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:01:55 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3160/session/552e1719ade2f4d8ce10068fdbf68623/screenshot {"sessionId": "552e1719ade2f4d8ce10068fdbf68623"}
+2017-12-14 23:01:56 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:01:56 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:01:56 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 23:18:01 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:18:01 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 23:18:03 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3576/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 23:18:06 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:18:06 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3576/session/6f2bf04d2a215c5abb934c8b9b4b7fe6/screenshot {"sessionId": "6f2bf04d2a215c5abb934c8b9b4b7fe6"}
+2017-12-14 23:18:06 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:18:07 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 23:18:07 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3576/session/6f2bf04d2a215c5abb934c8b9b4b7fe6/url {"url": "http://mail.126.com", "sessionId": "6f2bf04d2a215c5abb934c8b9b4b7fe6"}
+2017-12-14 23:18:09 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:18:09 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 23:18:09 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3576/session/6f2bf04d2a215c5abb934c8b9b4b7fe6/window/current/maximize {"windowHandle": "current", "sessionId": "6f2bf04d2a215c5abb934c8b9b4b7fe6"}
+2017-12-14 23:18:10 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:18:10 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 23:18:15 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 23:18:15 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3576/session/6f2bf04d2a215c5abb934c8b9b4b7fe6/source {"sessionId": "6f2bf04d2a215c5abb934c8b9b4b7fe6"}
+2017-12-14 23:18:15 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:18:15 TestSendMailWithAttachment.py[line:156] INFO步骤断言执行通过
+2017-12-14 23:18:15 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3576/session/6f2bf04d2a215c5abb934c8b9b4b7fe6/screenshot {"sessionId": "6f2bf04d2a215c5abb934c8b9b4b7fe6"}
+2017-12-14 23:18:16 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:18:16 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:18:16 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3576/session/6f2bf04d2a215c5abb934c8b9b4b7fe6/screenshot {"sessionId": "6f2bf04d2a215c5abb934c8b9b4b7fe6"}
+2017-12-14 23:18:16 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:18:17 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:18:17 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3576/session/6f2bf04d2a215c5abb934c8b9b4b7fe6/screenshot {"sessionId": "6f2bf04d2a215c5abb934c8b9b4b7fe6"}
+2017-12-14 23:18:17 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:18:17 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:18:18 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 23:25:49 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:25:55 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:29:40 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:29:40 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 23:29:43 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3844/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 23:29:46 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:29:46 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3844/session/cb4c7982406ded3301d5e53ca67a78ec/screenshot {"sessionId": "cb4c7982406ded3301d5e53ca67a78ec"}
+2017-12-14 23:29:46 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:29:46 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 23:29:46 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3844/session/cb4c7982406ded3301d5e53ca67a78ec/url {"url": "http://mail.126.com", "sessionId": "cb4c7982406ded3301d5e53ca67a78ec"}
+2017-12-14 23:29:49 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:29:49 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 23:29:49 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3844/session/cb4c7982406ded3301d5e53ca67a78ec/window/current/maximize {"windowHandle": "current", "sessionId": "cb4c7982406ded3301d5e53ca67a78ec"}
+2017-12-14 23:29:50 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:29:51 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 23:29:56 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 23:29:56 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3844/session/cb4c7982406ded3301d5e53ca67a78ec/source {"sessionId": "cb4c7982406ded3301d5e53ca67a78ec"}
+2017-12-14 23:29:56 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:29:56 TestSendMailWithAttachment.py[line:156] INFO步骤断言执行通过
+2017-12-14 23:29:56 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3844/session/cb4c7982406ded3301d5e53ca67a78ec/screenshot {"sessionId": "cb4c7982406ded3301d5e53ca67a78ec"}
+2017-12-14 23:29:57 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:29:57 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:29:57 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3844/session/cb4c7982406ded3301d5e53ca67a78ec/screenshot {"sessionId": "cb4c7982406ded3301d5e53ca67a78ec"}
+2017-12-14 23:29:57 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:29:57 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:29:57 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3844/session/cb4c7982406ded3301d5e53ca67a78ec/screenshot {"sessionId": "cb4c7982406ded3301d5e53ca67a78ec"}
+2017-12-14 23:29:58 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:29:58 TestSendMailWithAttachment.py[line:150] INFO步骤输入用户名执行失败！
+2017-12-14 23:29:58 TestSendMailWithAttachment.py[line:92] INFO开始执行用例发送带附件的邮件
+2017-12-14 23:30:00 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3895/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 23:30:04 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:30:04 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3895/session/8b18dbfcd2f0a218a58cc37636b72eee/screenshot {"sessionId": "8b18dbfcd2f0a218a58cc37636b72eee"}
+2017-12-14 23:30:05 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:30:05 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 23:30:05 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3895/session/8b18dbfcd2f0a218a58cc37636b72eee/url {"url": "https://www.baidu.com/", "sessionId": "8b18dbfcd2f0a218a58cc37636b72eee"}
+2017-12-14 23:30:07 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:30:07 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 23:30:07 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3895/session/8b18dbfcd2f0a218a58cc37636b72eee/window/current/maximize {"windowHandle": "current", "sessionId": "8b18dbfcd2f0a218a58cc37636b72eee"}
+2017-12-14 23:30:08 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:30:12 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 23:30:17 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 23:30:17 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3895/session/8b18dbfcd2f0a218a58cc37636b72eee/screenshot {"sessionId": "8b18dbfcd2f0a218a58cc37636b72eee"}
+2017-12-14 23:30:17 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:30:17 TestSendMailWithAttachment.py[line:150] INFO步骤输入关键字执行失败！
+2017-12-14 23:30:17 TestSendMailWithAttachment.py[line:164] INFO共2条用例,2条需要被执行，本次执行通过0条.
+2017-12-14 23:31:51 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:31:51 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 23:31:53 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3978/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 23:31:55 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:31:55 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3978/session/62366e133c12ff34c015198c1b33ef54/screenshot {"sessionId": "62366e133c12ff34c015198c1b33ef54"}
+2017-12-14 23:31:56 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:31:56 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 23:31:56 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3978/session/62366e133c12ff34c015198c1b33ef54/url {"url": "https://www.baidu.com/", "sessionId": "62366e133c12ff34c015198c1b33ef54"}
+2017-12-14 23:31:58 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:31:58 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 23:31:58 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:3978/session/62366e133c12ff34c015198c1b33ef54/window/current/maximize {"windowHandle": "current", "sessionId": "62366e133c12ff34c015198c1b33ef54"}
+2017-12-14 23:32:00 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:32:00 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 23:32:05 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 23:32:05 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:3978/session/62366e133c12ff34c015198c1b33ef54/screenshot {"sessionId": "62366e133c12ff34c015198c1b33ef54"}
+2017-12-14 23:32:05 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:32:05 TestSendMailWithAttachment.py[line:150] INFO步骤输入关键字执行失败！
+2017-12-14 23:32:06 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 23:50:09 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:50:09 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 23:50:11 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4258/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 23:50:14 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:50:14 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4258/session/cd891547192187a3432116b4a3f86c63/screenshot {"sessionId": "cd891547192187a3432116b4a3f86c63"}
+2017-12-14 23:50:14 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:50:14 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 45, in open_browser
+    raise e
+  File "D:\Python\KeyWordFrameWork\action\PageAction.py", line 43, in open_browser
+    waitUtil = waitUtil(driver)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 42, in writeTestResult
+    excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+2017-12-14 23:50:14 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 23:50:14 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4258/session/cd891547192187a3432116b4a3f86c63/url {"url": "https://www.baidu.com/", "sessionId": "cd891547192187a3432116b4a3f86c63"}
+2017-12-14 23:50:17 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:50:17 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4258/session/cd891547192187a3432116b4a3f86c63/screenshot {"sessionId": "cd891547192187a3432116b4a3f86c63"}
+2017-12-14 23:50:18 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:50:18 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 139, in TestSendMailWithAttachment
+    stepSheet,rowNo=step,colsNo=testStep_runTime
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 42, in writeTestResult
+    excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+2017-12-14 23:50:18 TestSendMailWithAttachment.py[line:150] INFO步骤访问126邮箱执行失败！
+2017-12-14 23:50:18 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4258/session/cd891547192187a3432116b4a3f86c63/window/current/maximize {"windowHandle": "current", "sessionId": "cd891547192187a3432116b4a3f86c63"}
+2017-12-14 23:50:19 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:50:19 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4258/session/cd891547192187a3432116b4a3f86c63/screenshot {"sessionId": "cd891547192187a3432116b4a3f86c63"}
+2017-12-14 23:50:19 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:50:19 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 139, in TestSendMailWithAttachment
+    stepSheet,rowNo=step,colsNo=testStep_runTime
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 42, in writeTestResult
+    excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+2017-12-14 23:50:19 TestSendMailWithAttachment.py[line:150] INFO步骤浏览器最大化执行失败！
+2017-12-14 23:50:24 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4258/session/cd891547192187a3432116b4a3f86c63/screenshot {"sessionId": "cd891547192187a3432116b4a3f86c63"}
+2017-12-14 23:50:25 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:50:25 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 139, in TestSendMailWithAttachment
+    stepSheet,rowNo=step,colsNo=testStep_runTime
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 42, in writeTestResult
+    excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+2017-12-14 23:50:25 TestSendMailWithAttachment.py[line:150] INFO步骤等待执行失败！
+2017-12-14 23:50:25 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4258/session/cd891547192187a3432116b4a3f86c63/screenshot {"sessionId": "cd891547192187a3432116b4a3f86c63"}
+2017-12-14 23:50:25 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:50:25 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 136, in TestSendMailWithAttachment
+    eval(expressionStr)
+  File "<string>", line 1, in <module>
+NameError: name 'xpath' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 42, in writeTestResult
+    excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+2017-12-14 23:50:25 TestSendMailWithAttachment.py[line:150] INFO步骤输入关键字执行失败！
+2017-12-14 23:50:25 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 42, in writeTestResult
+    excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+2017-12-14 23:50:25 TestSendMailWithAttachment.py[line:57] INFO写excel出错,Traceback (most recent call last):
+  File "D:\Python\KeyWordFrameWork\testScripts\TestSendMailWithAttachment.py", line 42, in writeTestResult
+    excelObj.writeCellCurrentTime(sheetObj,rowNo=rowNo,colsNo=colsDict[colsNo][0])
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 150, in writeCellCurrentTime
+    raise e
+  File "D:\Python\KeyWordFrameWork\util\ParseExcel.py", line 148, in writeCellCurrentTime
+    self.workbook.save(self.excelFile)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\workbook\workbook.py", line 263, in save
+    save_workbook(self, filename)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 239, in save_workbook
+    writer.save(filename, as_template=as_template)
+  File "D:\Python36\lib\site-packages\openpyxl-2.3.3-py3.6.egg\openpyxl\writer\excel.py", line 221, in save
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "D:\Python36\lib\zipfile.py", line 1090, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx'
+
+2017-12-14 23:50:25 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 23:52:31 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:52:31 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 23:52:33 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4307/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 23:52:36 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:52:36 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4307/session/e17685d92b8eb30edc8b587a7f9b5fd7/screenshot {"sessionId": "e17685d92b8eb30edc8b587a7f9b5fd7"}
+2017-12-14 23:52:36 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:52:36 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 23:52:36 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4307/session/e17685d92b8eb30edc8b587a7f9b5fd7/url {"url": "https://www.baidu.com/", "sessionId": "e17685d92b8eb30edc8b587a7f9b5fd7"}
+2017-12-14 23:52:39 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:52:39 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 23:52:39 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4307/session/e17685d92b8eb30edc8b587a7f9b5fd7/window/current/maximize {"windowHandle": "current", "sessionId": "e17685d92b8eb30edc8b587a7f9b5fd7"}
+2017-12-14 23:52:40 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:52:41 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 23:52:46 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 23:52:46 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4307/session/e17685d92b8eb30edc8b587a7f9b5fd7/screenshot {"sessionId": "e17685d92b8eb30edc8b587a7f9b5fd7"}
+2017-12-14 23:52:46 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:52:46 TestSendMailWithAttachment.py[line:150] INFO步骤输入关键字执行失败！
+2017-12-14 23:52:47 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-14 23:55:24 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-14 23:55:24 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-14 23:55:26 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4612/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-14 23:55:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:55:28 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4612/session/eed3d1c6afc3c530a7d1d1e7b2929cd4/screenshot {"sessionId": "eed3d1c6afc3c530a7d1d1e7b2929cd4"}
+2017-12-14 23:55:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:55:28 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-14 23:55:28 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4612/session/eed3d1c6afc3c530a7d1d1e7b2929cd4/url {"url": "https://www.baidu.com/", "sessionId": "eed3d1c6afc3c530a7d1d1e7b2929cd4"}
+2017-12-14 23:55:31 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:55:31 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-14 23:55:31 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4612/session/eed3d1c6afc3c530a7d1d1e7b2929cd4/window/current/maximize {"windowHandle": "current", "sessionId": "eed3d1c6afc3c530a7d1d1e7b2929cd4"}
+2017-12-14 23:55:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:55:32 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-14 23:55:38 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-14 23:55:38 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4612/session/eed3d1c6afc3c530a7d1d1e7b2929cd4/screenshot {"sessionId": "eed3d1c6afc3c530a7d1d1e7b2929cd4"}
+2017-12-14 23:55:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-14 23:55:38 TestSendMailWithAttachment.py[line:150] INFO步骤输入关键字执行失败！
+2017-12-14 23:55:38 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 00:08:23 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-15 00:08:23 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-15 00:08:25 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4748/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 00:08:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:08:28 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4748/session/37542f328dcb13325cdf312e2da81b5a/screenshot {"sessionId": "37542f328dcb13325cdf312e2da81b5a"}
+2017-12-15 00:08:28 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:08:28 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-15 00:08:28 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4748/session/37542f328dcb13325cdf312e2da81b5a/url {"url": "https://www.baidu.com/", "sessionId": "37542f328dcb13325cdf312e2da81b5a"}
+2017-12-15 00:08:31 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:08:31 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-15 00:08:31 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4748/session/37542f328dcb13325cdf312e2da81b5a/window/current/maximize {"windowHandle": "current", "sessionId": "37542f328dcb13325cdf312e2da81b5a"}
+2017-12-15 00:08:32 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:08:32 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-15 00:08:37 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-15 00:08:37 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4748/session/37542f328dcb13325cdf312e2da81b5a/screenshot {"sessionId": "37542f328dcb13325cdf312e2da81b5a"}
+2017-12-15 00:08:38 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:08:38 TestSendMailWithAttachment.py[line:150] INFO步骤输入关键字执行失败！
+2017-12-15 00:08:38 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.
+2017-12-15 00:09:10 TestSendMailWithAttachment.py[line:61] INFO126邮箱添加联系人数据驱动测试开始...
+2017-12-15 00:09:10 TestSendMailWithAttachment.py[line:92] INFO开始执行用例登录126邮箱
+2017-12-15 00:09:12 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4781/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["ignore-certificate-errors"], "extensions": [], "args": []}}}
+2017-12-15 00:09:15 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:09:15 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4781/session/88214085b8cf8fc54ebb66e336191f80/screenshot {"sessionId": "88214085b8cf8fc54ebb66e336191f80"}
+2017-12-15 00:09:15 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:09:16 TestSendMailWithAttachment.py[line:150] INFO步骤打开浏览器执行失败！
+2017-12-15 00:09:16 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4781/session/88214085b8cf8fc54ebb66e336191f80/url {"url": "https://www.baidu.com/", "sessionId": "88214085b8cf8fc54ebb66e336191f80"}
+2017-12-15 00:09:18 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:09:19 TestSendMailWithAttachment.py[line:156] INFO步骤访问126邮箱执行通过
+2017-12-15 00:09:19 remote_connection.py[line:474] DEBUGPOST http://127.0.0.1:4781/session/88214085b8cf8fc54ebb66e336191f80/window/current/maximize {"windowHandle": "current", "sessionId": "88214085b8cf8fc54ebb66e336191f80"}
+2017-12-15 00:09:20 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:09:20 TestSendMailWithAttachment.py[line:156] INFO步骤浏览器最大化执行通过
+2017-12-15 00:09:25 TestSendMailWithAttachment.py[line:156] INFO步骤等待执行通过
+2017-12-15 00:09:25 remote_connection.py[line:474] DEBUGGET http://127.0.0.1:4781/session/88214085b8cf8fc54ebb66e336191f80/screenshot {"sessionId": "88214085b8cf8fc54ebb66e336191f80"}
+2017-12-15 00:09:26 remote_connection.py[line:561] DEBUGFinished Request
+2017-12-15 00:09:26 TestSendMailWithAttachment.py[line:150] INFO步骤输入关键字执行失败！
+2017-12-15 00:09:26 TestSendMailWithAttachment.py[line:164] INFO共2条用例,1条需要被执行，本次执行通过0条.

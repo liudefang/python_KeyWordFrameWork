@@ -24,7 +24,7 @@ class ParseExcel(object):
         self.excelFile = excelPathAndName
         return self.workbook
 
-    def getSheetByname(self,sheetName):
+    def getSheetByName(self,sheetName):
         #根据sheet名获取该sheet对象
         try:
             sheet = self.workbook.get_sheet_by_name(sheetName)
@@ -32,7 +32,7 @@ class ParseExcel(object):
         except Exception as e:
             raise e
 
-    def getSheetByindex(self,sheetIndex):
+    def getSheetByIndex(self,sheetIndex):
         #根据sheet的索引号获取sheet对象
         try:
             sheetname = self.workbook.get_sheet_by_names()[sheetIndex]
@@ -56,6 +56,7 @@ class ParseExcel(object):
         return sheet.min_row
 
     def getStartColNumber(self,sheet):
+        # 获取sheet中有数据区域的开始的列号
         return sheet.min_column
 
     def getRow(self,sheet,rowNo):
@@ -80,12 +81,12 @@ class ParseExcel(object):
         #如getCellObject（sheet，rowNo，colsNo=2)
         if coordinate != None:
             try:
-                return sheet.cell(coordinate=coordinate)
+                return sheet.cell(coordinate=coordinate).value
             except Exception as e:
                 raise e
-        elif coordinate == None and rowNo is not None and colsNo is not None:
+        elif coordinate is None and rowNo is not None and colsNo is not None:
             try:
-                return sheet.cell(row = rowNo,column = colsNo)
+                return sheet.cell(row = rowNo,column = colsNo).value
             except Exception as e:
                 raise e
         else:
@@ -119,14 +120,22 @@ class ParseExcel(object):
                 self.workbook.save(self.excelFile)
             except Exception as e:
                 raise e
+        elif coordinate == None and rowNo is not None and colsNo is not None:
+            try:
+                sheet.cell(row = rowNo,column= colsNo).value = content
+                if style:
+                     sheet.cell(row=rowNo,column= colsNo).font = Font(color=self.RGBDict[style])
+                self.workbook.save(self.excelFile)
+            except Exception as e:
+                raise e
         else:
             raise Exception("Insufficient Coordinates of cell!")
 
-    def writeCellCurrentTime(self,sheet,content,coordinate = None,rowNo = None,colsNo = None):
+    def writeCellCurrentTime(self,sheet,coordinate = None,rowNo = None,colsNo = None):
         #写入当前的时间，下标从1开始
         now = int(time.time())  #显示时间戳
         timeArray = time.localtime(now)
-        currentTime = time.strftime("%Y-%m-%d %H:%M*%S",timeArray)
+        currentTime = time.strftime("%Y-%m-%d %H:%M:%S",timeArray)
         if coordinate is not None:
             try:
                 sheet.cell(coordinate = coordinate).value = currentTime
@@ -145,7 +154,7 @@ class ParseExcel(object):
     if __name__ == '__main__':
         pe = ParseExcel()
         #测试所有的excel文件“126邮箱联系人.xlsx"请自行创建
-        pe.loadWorkBook('D:\\Python\\DataDrivenFrameWork\\testData\\126邮箱联系人.xlsx')
+        pe.loadWorkBook('D:\\Python\\KeyWordFrameWork\\testData\\126邮箱联系人.xlsx')
         print("通过名称获取sheet对象的名字：",pe.getSheetByName("联系人").title)
         print("通过index序号获取sheet对象的名称：",pe.getSheetByIndex(0).title)
         sheet = pe.getSheetByIndex(0)

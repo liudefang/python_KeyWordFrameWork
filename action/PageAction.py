@@ -6,10 +6,11 @@
 
 #定义全局driver变量
 import time
-from selenium.webdriver.chrome import webdriver
-from selenium.webdriver.chrome.options import Options
 
-from config.VarConfig import chromeDriverFilePath, ieDriverFilePath
+from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
+
+from config.VarConfig import chromeDriverFilePath, ieDriverFilePath, firefoxDriverFilePath
 from util.ClipboardUtil import Clipboard
 from util.DirAndTime import getCurrentTime, createCurrentDateDir
 from util.KeyBoardUtil import KeyboardKeys
@@ -24,6 +25,7 @@ def open_browser(browserName,*arg):
     global driver,waitUtil
     try:
         if browserName.lower() == 'ie':
+
             driver = webdriver.Ie(executable_path = ieDriverFilePath)
         elif browserName.lower() == 'chrome':
             #创建Chrome浏览器的一个options实例对象
